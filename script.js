@@ -22,26 +22,12 @@ const SOCIAL_LINKS = {
 const produtos = [
   {
     id: 1,
-    nome: "Console Nintendo Switch V2 com 3 jogos inclusos.",
-    grupo: "Tecnologia",
-    preco: null,
-    status: "Disponível",
-    categoria: "Games",
-    resumo: "Console Nintendo Switch V2 com 3 jogos inclusos.",
-    especificacoes: ["Estado de conservação: excelente", "Todos os acessórios inclusos", "3 jogos inclusos", "2 suportes de joycon inclusos", "1 case de transporte incluso", "Micro SD de 64GB incluso"],
-    fotos: [
-      "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=900&q=80"
-    ]
-  },
-  {
-    id: 2,
     nome: "Notebook Lenovo Ideapad Gaming 3i i5-11300H 8GB RAM SSD 512GB Windows 11",
     grupo: "Tecnologia",
     preco: 2500.00,
     status: "Disponível",
     categoria: "Informática",
-    resumo: "R$ 2.500,00 no Pix / débito ou 12x de R$ 237,83 no cartão de crédito (total R$ 2.853,99)",
+    resumo: "R$ 2.500,00 no Pix / débito ou até 12x de R$ 254,96 no cartão de crédito (total R$ 3.049,99)",
     especificacoes: ["Estado de conservação do notebook: bom", "Estado de conservação do carregador: um poouco gasto, mas funcional", "Bateria com boa durabilidade", "Tela Full HD", "Processador i5 de 11ª geração", "Placa de vídeo dedicada NVIDIA GTX 1650", "16GB de RAM (pente de 8GB adicionado)", "512GB SSD"],
     fotos: [
       "assets/produtos/notebook-capa.jpeg",
@@ -62,38 +48,18 @@ const produtos = [
     ]
   },
   {
-    id: 3,
-    nome: "Controle",
+    id: 2,
+    nome: "Controle Sony DualShock 4 Original (PS4 / PC)",
     grupo: "Tecnologia",
-    preco: null,
+    preco: 200.00,
     status: "Disponível",
-    categoria: "Games",
-    resumo: "Detalhes em breve.",
-    especificacoes: [],
-    fotos: []
-  },
-  {
-    id: 4,
-    nome: "Fone",
-    grupo: "Tecnologia",
-    preco: null,
-    status: "Disponível",
-    categoria: "Acessórios",
-    resumo: "Detalhes em breve.",
-    especificacoes: [],
-    fotos: []
-  },
-  {
-    id: 5,
-    nome: "Exemplo disponível",
-    grupo: "Outros",
-    preco: null,
-    status: "Disponível",
-    categoria: "Exemplo",
-    resumo: "Item fictício para testar os filtros.",
-    especificacoes: [],
-    fotos: [],
-    exemplo: true
+    categoria: "Informática",
+    resumo: "R$ 200,00 no Pix / débito ou até 12x de R$ 20,39 no cartão de crédito (total R$ 244,77,00)",
+    especificacoes: ["Estado de conservação do controle: excelente", "Estado de conservação do carregador: excelente (cabo original)", "Bateria com excelente durabilidade", "Compatível com PlayStation 4, PC, Android e iOS", "Conexão via Bluetooth ou cabo USB"],
+    fotos: [
+      "assets/controle/capa.jpg",
+      "assets/controle/2.jpg",
+    ]
   },
   {
     id: 6,
