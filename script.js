@@ -55,7 +55,7 @@ const produtos = [
     status: "Disponível",
     categoria: "Informática",
     resumo: "R$ 200,00 no Pix / débito ou até 12x de R$ 20,39 no cartão de crédito (total R$ 244,77,00)",
-    especificacoes: ["Estado de conservação do controle: excelente", "Estado de conservação do carregador: excelente (cabo original)", "Bateria com excelente durabilidade", "Compatível com PlayStation 4, PC, Android e iOS", "Conexão via Bluetooth ou cabo USB"],
+    especificacoes: ["Estado de conservação do controle: excelente", "Estado de conservação do cabo de carregador: excelente (cabo original)", "Bateria com excelente durabilidade", "Compatível com PlayStation 4, PC, Android e iOS", "Conexão via Bluetooth ou cabo USB"],
     fotos: [
       "assets/controle/capa.jpg",
       "assets/controle/2.jpg",
