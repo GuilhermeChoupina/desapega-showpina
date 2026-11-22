@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#580A9E">
+  <meta name="description" content="Desapega Showpina: itens usados em ótimas condições, mostrados ao vivo.">
+  <title>Desapega Showpina</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__accent" aria-hidden="true"></div>
+    <div class="container header__inner">
+      <a class="brand" href="#" aria-label="Desapega Showpina - início">
+        <span class="brand__mark">DS</span>
+        <span class="brand__name">Desapega <strong>Showpina</strong></span>
+      </a>
+
+      <div class="trust">
+        <!-- Troque pelo recorte do criador: assets/avatar-showpina.png -->
+        <img class="trust__avatar" src="assets/avatar.png"
+             alt="Showpina" onerror="this.style.display='none'">
+        <span class="trust__text">
+          <strong>Compra com confiança</strong>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="catalog__heading">
+          <div>
+            <p class="eyebrow">Bazar da live</p>
+            <h1 id="catalog-title">Achados para desapegar</h1>
+          </div>
+
+          <nav class="filters" aria-label="Filtrar produtos">
+            <button class="filter is-active" type="button" data-filter="Todos" aria-pressed="true">Todos</button>
+            <button class="filter" type="button" data-filter="Disponível" aria-pressed="false">Disponíveis</button>
+            <button class="filter" type="button" data-filter="Vendido" aria-pressed="false">Vendidos</button>
+          </nav>
+        </div>
+
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="live-cta" aria-label="Acompanhe as lives">
+      <div class="container live-cta__inner">
+        <div>
+          <p class="eyebrow">Ao vivo</p>
+          <h2>YouTube, Kick e Twitch.</h2>
+        </div>
+        <!-- Troque o # pelos links das suas redes ou lives -->
+        <a class="button button--light" id="live-link" href="#" target="_blank" rel="noopener">
+          Ver próxima live
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <a class="brand brand--footer" href="#">
+          <span class="brand__mark">DS</span>
+          <span class="brand__name">Desapega <strong>Showpina</strong></span>
+        </a>
+        <p>Pagamento combinado pelo WhatsApp.<br>Entrega ou retirada na região indicada na live.</p>
+      </div>
+      <nav class="footer__links" aria-label="Redes sociais">
+        <!-- Troque os links "#" pelos seus perfis -->
+        <a href="https://www.instagram.com/shwpina/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@Showpina" target="_blank">YouTube</a>
+      </nav>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Ampliação da foto">
+    <button class="lightbox__close" type="button" aria-label="Fechar imagem">&times;</button>
+    <img class="lightbox__image" id="lightbox-image" src="" alt="">
+    <button class="lightbox__arrow lightbox__arrow--previous" type="button"
+            aria-label="Foto anterior">&#8249;</button>
+    <button class="lightbox__arrow lightbox__arrow--next" type="button"
+            aria-label="Próxima foto">&#8250;</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
