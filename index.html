@@ -26,7 +26,7 @@
         <img class="trust__avatar" src="assets/avatar.png"
              alt="Showpina" onerror="this.style.display='none'">
         <span class="trust__text">
-          <strong>Compra com confiança</strong>
+          <strong>Compra com confiança</strong> Entrega feita por mim mesmo !
         </span>
       </div>
     </div>
@@ -41,11 +41,28 @@
             <h1 id="catalog-title">Achados para desapegar</h1>
           </div>
 
-          <nav class="filters" aria-label="Filtrar produtos">
-            <button class="filter is-active" type="button" data-filter="Todos" aria-pressed="true">Todos</button>
-            <button class="filter" type="button" data-filter="Disponível" aria-pressed="false">Disponíveis</button>
-            <button class="filter" type="button" data-filter="Vendido" aria-pressed="false">Vendidos</button>
-          </nav>
+          <div class="catalog__filters">
+            <nav class="filters category-tabs" aria-label="Categorias de produtos">
+              <button class="filter category-tab is-active" type="button" data-category="Tecnologia" aria-pressed="true">
+                Tecnologia <span class="filter__count" data-category-count aria-hidden="true"></span>
+              </button>
+              <button class="filter category-tab" type="button" data-category="Outros" aria-pressed="false">
+                Outros <span class="filter__count" data-category-count aria-hidden="true"></span>
+              </button>
+            </nav>
+
+            <nav class="filters" aria-label="Filtrar produtos por status">
+              <button class="filter status-filter is-active" type="button" data-filter="Todos" aria-pressed="true">
+                Todos <span class="filter__count" data-status-count aria-hidden="true"></span>
+              </button>
+              <button class="filter status-filter" type="button" data-filter="Disponível" aria-pressed="false">
+                Disponíveis <span class="filter__count" data-status-count aria-hidden="true"></span>
+              </button>
+              <button class="filter status-filter" type="button" data-filter="Vendido" aria-pressed="false">
+                Vendidos <span class="filter__count" data-status-count aria-hidden="true"></span>
+              </button>
+            </nav>
+          </div>
         </div>
 
         <div class="product-grid" id="product-grid" aria-live="polite"></div>

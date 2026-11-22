@@ -149,6 +149,13 @@ img {
   margin-bottom: 30px;
 }
 
+.catalog__filters {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
 .eyebrow {
   margin: 0 0 7px;
   color: var(--primary);
@@ -191,6 +198,16 @@ h1 {
   font-size: 13px;
   font-weight: 700;
   transition: 160ms ease;
+}
+
+.filter__count {
+  margin-left: 4px;
+  opacity: 0.72;
+  font-size: 11px;
+}
+
+.filter.is-active .filter__count {
+  opacity: 1;
 }
 
 .filter:hover {
@@ -237,6 +254,16 @@ h1 {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--surface);
+}
+
+.product-card__placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .product-card__image {
@@ -677,6 +704,11 @@ h1 {
     flex-direction: column;
   }
 
+  .catalog__filters {
+    width: 100%;
+    align-items: stretch;
+  }
+
   .filters {
     width: 100%;
   }
@@ -684,6 +716,19 @@ h1 {
   .filter {
     flex: 1;
     padding-inline: 8px;
+  }
+
+  .status-filter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding-inline: 4px;
+    font-size: 11px;
+  }
+
+  .status-filter .filter__count {
+    margin-left: 0;
   }
 
   .product-grid {
