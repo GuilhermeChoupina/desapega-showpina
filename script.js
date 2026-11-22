@@ -7,7 +7,7 @@ const WHATSAPP_NUMBER = "5511954607586";
 
 // Troque "#" pelos links oficiais das suas redes e lives.
 const SOCIAL_LINKS = {
-  live: "linktr.ee/Showpina",
+  live: "https://linktr.ee/Showpina",
   instagram: "https://www.instagram.com/shwpina/",
   youtube: "https://www.youtube.com/@Showpina"
 };
@@ -26,8 +26,8 @@ const produtos = [
     preco: null,
     status: "Disponível",
     categoria: "Games",
-    resumo: "Console Nintendo Switch, mostrado funcionando ao vivo antes da venda.",
-    especificacoes: ["Testado na live", "Controles inclusos", "Detalhes a confirmar"],
+    resumo: "Console Nintendo Switch V2 com 3 jogos inclusos.",
+    especificacoes: ["Estado de conservação: excelente", "Todos os acessórios inclusos", "3 jogos inclusos", "2 suportes de joycon inclusos", "1 case de transporte incluso", "Micro SD de 64GB incluso"],
     fotos: [
       "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=900&q=80",
       "https://images.unsplash.com/photo-1578303512597-81e6cc155b3e?auto=format&fit=crop&w=900&q=80"
@@ -39,11 +39,24 @@ const produtos = [
     preco: null,
     status: "Disponível",
     categoria: "Informática",
-    resumo: "Notebook Lenovo voltado para jogos e trabalho pesado, testado ao vivo.",
-    especificacoes: ["Modelo a confirmar", "Acessórios inclusos", "Testado na live"],
+    resumo: "Notebook Lenovo voltado para jogos e trabalho pesado.",
+    especificacoes: ["Estado de conservação do notebook: bom", "Estado de conservação do carregador: bom, mordido mas funcional", "Bateria com boa durabilidade", "Tela Full HD", "Processador i5 de 11ª geração", "Placa de vídeo dedicada NVIDIA GTX 1650", "16GB de RAM", "512GB SSD"],
     fotos: [
-      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80",
-      "https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?auto=format&fit=crop&w=900&q=80"
+      "assets/produtos/notebook-capa.jpeg",
+      "assets/produtos/notebook-02.jpeg",
+      "assets/produtos/notebook-03.jpeg",
+      "assets/produtos/notebook-04.jpeg",
+      "assets/produtos/notebook-05.jpeg",
+      "assets/produtos/notebook-06.jpeg",
+      "assets/produtos/notebook-07.jpeg",
+      "assets/produtos/notebook-08.jpeg",
+      "assets/produtos/notebook-09.jpeg",
+      "assets/produtos/notebook-10.jpeg",
+      "assets/produtos/notebook-11.jpeg",
+      "assets/produtos/notebook-12.jpeg",
+      "assets/produtos/notebook-13.jpeg",
+      "assets/produtos/notebook-14.jpeg",
+      "assets/produtos/notebook-15.jpeg"
     ]
   }
 ];
