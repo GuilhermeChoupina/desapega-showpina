@@ -2,10 +2,8 @@
 // CONFIGURAÇÃO PRINCIPAL
 // ==========================================================
 
-// Troque pelo seu número com código do país e DDD, somente números.
 const WHATSAPP_NUMBER = "5511954607586";
 
-// Troque "#" pelos links oficiais das suas redes e lives.
 const SOCIAL_LINKS = {
   live: "https://linktr.ee/Showpina",
   instagram: "https://www.instagram.com/shwpina/",
@@ -24,10 +22,10 @@ const produtos = [
     id: 1,
     nome: "Notebook Lenovo Ideapad Gaming 3i i5-11300H 8GB RAM SSD 512GB Windows 11",
     grupo: "Tecnologia",
-    preco: 2500.00,
+    preco: 2499.00,
     status: "Disponível",
     categoria: "Informática",
-    resumo: "R$ 2.500,00 no Pix / débito ou até 12x de R$ 254,96 no cartão de crédito (total R$ 3.049,99)",
+    resumo: "R$ 2.499,00 no Pix / débito ou até 12x de R$ 254,16 no cartão de crédito (total R$ 3.050,00)",
     especificacoes: ["Estado de conservação do notebook: bom", "Estado de conservação do carregador: um pouco gasto, mas funcional", "Bateria com boa durabilidade", "Tela Full HD", "Processador i5 de 11ª geração", "Placa de vídeo dedicada NVIDIA GTX 1650", "16GB de RAM (pente de 8GB adicionado)", "512GB SSD"],
     fotos: [
       "assets/produtos/notebook-capa.jpeg",
@@ -51,22 +49,22 @@ const produtos = [
     id: 2,
     nome: "Controle Sony DualShock 4 Original (PS4 / PC)",
     grupo: "Tecnologia",
-    preco: 200.00,
+    preco: 199.00,
     status: "Disponível",
     categoria: "Informática",
-    resumo: "R$ 200,00 no Pix / débito ou até 12x de R$ 20,39 no cartão de crédito (total R$ 244,77)",
+    resumo: "R$ 199,00 no Pix / débito ou até 12x de R$ 20,29 no cartão de crédito (total R$ 243,55)",
     especificacoes: ["Estado de conservação do controle: excelente", "Estado de conservação do cabo de carregador: excelente (cabo original)", "Bateria com excelente durabilidade", "Compatível com PlayStation 4, PC, Android e iOS", "Conexão via Bluetooth ou cabo USB"],
     fotos: [
       "assets/controle/capa.jpg",
-      "assets/controle/2.jpg",
+      "assets/controle/2.jpg"
     ]
   },
   {
     id: 3,
-    nome: "Exemplo vendido",
+    nome: "Ainda não há produtos cadastrados nesta categoria.",
     grupo: "Outros",
     preco: null,
-    status: "Vendido",
+    status: "Disponível",
     categoria: "Exemplo",
     resumo: "Item fictício para testar os filtros.",
     especificacoes: [],
