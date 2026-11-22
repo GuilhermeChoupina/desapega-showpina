@@ -28,7 +28,7 @@ const produtos = [
     status: "Disponível",
     categoria: "Informática",
     resumo: "R$ 2.500,00 no Pix / débito ou até 12x de R$ 254,96 no cartão de crédito (total R$ 3.049,99)",
-    especificacoes: ["Estado de conservação do notebook: bom", "Estado de conservação do carregador: um poouco gasto, mas funcional", "Bateria com boa durabilidade", "Tela Full HD", "Processador i5 de 11ª geração", "Placa de vídeo dedicada NVIDIA GTX 1650", "16GB de RAM (pente de 8GB adicionado)", "512GB SSD"],
+    especificacoes: ["Estado de conservação do notebook: bom", "Estado de conservação do carregador: um pouco gasto, mas funcional", "Bateria com boa durabilidade", "Tela Full HD", "Processador i5 de 11ª geração", "Placa de vídeo dedicada NVIDIA GTX 1650", "16GB de RAM (pente de 8GB adicionado)", "512GB SSD"],
     fotos: [
       "assets/produtos/notebook-capa.jpeg",
       "assets/produtos/notebook-02.jpeg",
@@ -54,7 +54,7 @@ const produtos = [
     preco: 200.00,
     status: "Disponível",
     categoria: "Informática",
-    resumo: "R$ 200,00 no Pix / débito ou até 12x de R$ 20,39 no cartão de crédito (total R$ 244,77,00)",
+    resumo: "R$ 200,00 no Pix / débito ou até 12x de R$ 20,39 no cartão de crédito (total R$ 244,77)",
     especificacoes: ["Estado de conservação do controle: excelente", "Estado de conservação do cabo de carregador: excelente (cabo original)", "Bateria com excelente durabilidade", "Compatível com PlayStation 4, PC, Android e iOS", "Conexão via Bluetooth ou cabo USB"],
     fotos: [
       "assets/controle/capa.jpg",
@@ -62,7 +62,7 @@ const produtos = [
     ]
   },
   {
-    id: 6,
+    id: 3,
     nome: "Exemplo vendido",
     grupo: "Outros",
     preco: null,
@@ -88,8 +88,8 @@ let lightboxIndex = 0;
 let lightboxProductName = "";
 let activeCategory = "Tecnologia";
 const categoryStatusFilters = {
-  Tecnologia: "Todos",
-  Outros: "Todos"
+  Tecnologia: "Disponível",
+  Outros: "Disponível"
 };
 
 function formatPrice(value) {
@@ -186,7 +186,7 @@ function renderCard(produto) {
     : "";
 
   return `
-    <article class="product-card ${sold ? "is-sold" : ""}" data-status="${produto.status}">
+    <article class="product-card ${sold ? "is-sold" : ""}" data-status="${produto.status}" data-product-id="${produto.id}">
       <div class="product-card__media">
         <span class="status-badge ${sold ? "status-badge--sold" : ""}">
           ${produto.status}
@@ -234,9 +234,7 @@ function updateFilterCounts() {
   const categoryProducts = produtos.filter((produto) => produto.grupo === activeCategory);
   filterButtons.forEach((button) => {
     const filter = button.dataset.filter;
-    const count = filter === "Todos"
-      ? categoryProducts.length
-      : categoryProducts.filter((produto) => produto.status === filter).length;
+    const count = categoryProducts.filter((produto) => produto.status === filter).length;
     const isActive = filter === categoryStatusFilters[activeCategory];
     button.querySelector("[data-status-count]").textContent = count;
     button.classList.toggle("is-active", isActive);
@@ -247,9 +245,7 @@ function updateFilterCounts() {
 function renderProducts() {
   const filter = categoryStatusFilters[activeCategory];
   const categoryProducts = produtos.filter((produto) => produto.grupo === activeCategory);
-  const filtered = filter === "Todos"
-    ? categoryProducts
-    : categoryProducts.filter((produto) => produto.status === filter);
+  const filtered = categoryProducts.filter((produto) => produto.status === filter);
 
   if (!filtered.length) {
     productGrid.innerHTML = `
@@ -307,7 +303,7 @@ productGrid.addEventListener("click", (event) => {
   const imageButton = event.target.closest(".product-card__image");
   if (imageButton) {
     const product = produtos.find((item) =>
-      item.nome === card.querySelector("h3").textContent
+      item.id === Number(card.dataset.productId)
     );
     openLightbox(
       product ? product.fotos : [imageButton.dataset.photo],

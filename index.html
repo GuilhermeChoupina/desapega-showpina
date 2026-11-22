@@ -9,22 +9,22 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/logo.jpg" type="logo">
+  <link rel="icon" href="assets/icon.jpg" type="image/x-icon">
 </head>
 <body>
   <header class="header">
     <div class="header__accent" aria-hidden="true"></div>
     <div class="container header__inner">
       <a class="brand" href="#" aria-label="Desapega Showpina - início">
-        <span class="brand__mark">DS</span>
+        <img src="assets/logo.jpg" alt="Logo Desapega Showpina" class="brand__mark">
         <span class="brand__name">Desapega <strong>Showpina</strong></span>
       </a>
 
       <div class="trust">
         <!-- Troque pelo recorte do criador: assets/avatar-showpina.png -->
-        <img class="trust__avatar" src="assets/avatar.png"
+        <img class="trust__avatar" src="assets/logo.jpg"
              alt="Showpina" onerror="this.style.display='none'">
         <span class="trust__text">
           <strong>Compra com confiança</strong> Entrega feita por mim mesmo !
@@ -53,10 +53,7 @@
             </nav>
 
             <nav class="filters" aria-label="Filtrar produtos por status">
-              <button class="filter status-filter is-active" type="button" data-filter="Todos" aria-pressed="true">
-                Todos <span class="filter__count" data-status-count aria-hidden="true"></span>
-              </button>
-              <button class="filter status-filter" type="button" data-filter="Disponível" aria-pressed="false">
+              <button class="filter status-filter is-active" type="button" data-filter="Disponível" aria-pressed="true">
                 Disponíveis <span class="filter__count" data-status-count aria-hidden="true"></span>
               </button>
               <button class="filter status-filter" type="button" data-filter="Vendido" aria-pressed="false">
@@ -88,7 +85,7 @@
     <div class="container footer__inner">
       <div>
         <a class="brand brand--footer" href="#">
-          <span class="brand__mark">DS</span>
+          <img src="assets/logo.jpg" alt="Logo Desapega Showpina" class="brand__mark">
           <span class="brand__name">Desapega <strong>Showpina</strong></span>
         </a>
         <p>Pagamento combinado pelo WhatsApp.<br>Entrega ou retirada na região do ABC.</p>

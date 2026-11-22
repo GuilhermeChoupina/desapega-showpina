@@ -85,6 +85,7 @@ img {
   height: 42px;
   place-items: center;
   border-radius: 12px;
+  object-fit: cover;
   color: #fff;
   background: var(--primary);
   font-size: 13px;
